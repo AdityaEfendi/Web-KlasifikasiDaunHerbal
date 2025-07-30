@@ -41,9 +41,9 @@ set_background('coolbackgrounds-gradient-kale.png')
 @st.cache_resource()
 def load_model(mode='Skenario Terang'):
     if mode == 'Skenario Gelap':
-        return tf.keras.models.load_model('model Resnet50\model_gamma_val.keras')
+        return tf.keras.models.load_model('model_gelap_val.keras')
     else:
-        return tf.keras.models.load_model('model Resnet50\model_terang_val.keras')
+        return tf.keras.models.load_model('model_terang_val.keras')
 
 class_names = [
     "binahong", "kari", "katuk", "kelor", "kemangi",
